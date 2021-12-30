@@ -12,7 +12,7 @@ Install anyenv in advance
 
 1. `anyenv install pyenv`
 2. `pyenv install 3.9.0`
-3. git clone this repository
+3. Clone this repository
 
 ## Usage
 
