@@ -1,18 +1,23 @@
 # import os
-import string
 import sys
-import argparse
 # import subprocess
 from rndstr import rndstr
 
 def main():
-    parser = argparse.ArgumentParser(description='rndstr')
-    # ナンバーを指定しない場合の処理を追加
-    # 現在は指定しないとエラーになるため
-    parser.add_argument('arg1')
-    args = parser.parse_args()
-    specifyNumber = int(sys.argv[1])
-    print(rndstr.rndstr(specifyNumber))
+    # デフォルトの出力数
+    defaultNumber = 8
+
+    if len(sys.argv) == 2:
+        try:
+            print(rndstr.rndstr(int(sys.argv[1])))
+        except ValueError:
+            print ("Error! Please do not enter characters other than numbers!")
+            sys.exit()
+    elif len(sys.argv) >= 3:
+        print('Please enter only one args!')
+        sys.exit()
+    else:
+        print(rndstr.rndstr(defaultNumber))
 
 if __name__ == "__main__":
     main()

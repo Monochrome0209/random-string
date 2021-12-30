@@ -23,17 +23,10 @@ $ pip install rndstr
 $ randomstring [specify the number]
 $ [Outputs a random specify the number string]
 ```
-Or, you can also run the Python file directly.
+
+If you don't specify a number as an argument, 8 digits is the default.
 
 ```bash
-$ python rndstr/main
-$ [Outputs a random 8-character string]
+$ randomstring
+$ [Outputs 8 digits string]
 ```
-
-You can specify the number of characters to output.
-
-```bash
-$ python rndstr/main [specify the number]
-$ [Outputs a random specify the number string]
-```
-
