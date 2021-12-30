@@ -37,5 +37,3 @@ $ python rndstr/main [specify the number]
 $ [Outputs a random specify the number string]
 ```
 
-## Demo
-
