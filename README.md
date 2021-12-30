@@ -19,6 +19,13 @@ Install anyenv in advance
 default use.
 
 ```bash
+$ pip install rndstr
+$ randomstring [specify the number]
+$ [Outputs a random specify the number string]
+```
+Or, you can also run the Python file directly.
+
+```bash
 $ python rndstr/main
 $ [Outputs a random 8-character string]
 ```

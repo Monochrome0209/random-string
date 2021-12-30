@@ -5,7 +5,7 @@ setup(
     version='1.1',
     description='a random string generate',
     author='calx0209',
-    url='https://github.com/calx0209/random-string',
+    url='https://github.com/MonochromePapilio/random-string',
     pachage=find_packages(),
     install_requires=["argparse", "rndstr"],
     entry_points={
